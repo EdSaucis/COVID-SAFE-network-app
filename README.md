@@ -15,7 +15,7 @@ python3 client.py <server_ip> <server_port> <client_udp_port>
 - server_port: the port number of the server being connected to
 - client_udp_port: the port number of the UDP being set up
 
-3. Login the user. A list of usernames and passwords are stored in credentials.txt. If a username and password are valid, the program will be entered.
+3. Login the user by entering username and password as prompted. A list of usernames and passwords are stored in credentials.txt. If a username and password are valid, the program will be entered.
 
 4. Run client commands
 - “Download_tempID”: generates and downloads a new tempID to the client,
