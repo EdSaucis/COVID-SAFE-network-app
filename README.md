@@ -18,12 +18,12 @@ python3 client.py <server_ip> <server_port> <client_udp_port>
 3. Login the user. A list of usernames and passwords are stored in credentials.txt. If a username and password are valid, the program will be entered.
 
 4. Run client commands
-a. “Download_tempID”: generates and downloads a new tempID to the client,
+- “Download_tempID”: generates and downloads a new tempID to the client,
 adding it to the list of tempIDs.txt. (no tempID is set when logging in, so this
 needs to be run first for a successful beacon to be sent)
-b. “Upload_contact_log”: sends the current contact log to the server where it
+- “Upload_contact_log”: sends the current contact log to the server where it
 prints all the phone numbers of contacts
-c. “Beacon <ip_address> <udp_port>”: sends a beacon to a client through a
+- “Beacon <ip_address> <udp_port>”: sends a beacon to a client through a
 UDP with IP address and port number.
-d. “logout”: logs out the client. Client must be logged out before server can shut
+- “logout”: logs out the client. Client must be logged out before server can shut
 with Keyboard Interrupt
