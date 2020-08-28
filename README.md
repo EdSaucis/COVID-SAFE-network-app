@@ -9,7 +9,7 @@ python3 server.py <server_port > <block_duration>
 - block_duration: the amount of time that a user will be locked out of the program
 after failing login more than three times.
 
-2. Start up a client (can be done multiple at the same time):
+2. Start up a client (multiple clients can run at the same time):
 python3 client.py <server_ip> <server_port> <client_udp_port>
 - server_ip: the ip address of the server being connected to
 - server_port: the port number of the server being connected to
@@ -22,8 +22,8 @@ python3 client.py <server_ip> <server_port> <client_udp_port>
 adding it to the list of tempIDs.txt. (no tempID is set when logging in, so this
 needs to be run first for a successful beacon to be sent)
 - “Upload_contact_log”: sends the current contact log to the server where it
-prints all the phone numbers of contacts
-- “Beacon <ip_address> <udp_port>”: sends a beacon to a client through a
+prints all the phone numbers of users which client has been in contact with
+- “Beacon <ip_address> <udp_port>”: sends a contact beacon to another client through a
 UDP with IP address and port number.
 - “logout”: logs out the client. Client must be logged out before server can shut
 with Keyboard Interrupt
